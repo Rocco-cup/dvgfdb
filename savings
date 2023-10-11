@@ -1,0 +1,10 @@
+# Import the necessary libraries
+import requests
+import bs4
+
+# Determine the URL of the website
+url = "https://atalayar.com/en/content/how-collect-summer-look-maximum-savings"
+
+# Get the HTML code of the page
+response = requests.get(url)
+soup = bs4.BeautifulSoup(response.content, "html.parser")
